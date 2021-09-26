@@ -1,0 +1,39 @@
+{% extends 'common.html' %}
+{% load static %}
+{% block content %}
+    <br><br><br>
+    <style>
+       .data
+       {
+          background-color: #fffdbf;
+           padding: 5px;
+           font-weight: bold;
+           font-family: Arial;
+       }
+    </style>
+    <table align="center" border="0" width="650">
+       <tr>
+           <th class="sub-title" colspan="2">Well-Come Mr.{{ data.name }}</th>
+       </tr>
+       <tr>
+           <th class="data" rowspan="12"><img src="{{ data.profile_image.url }}" height="350">
+           </th>
+       </tr>
+        <tr><th class="data">IDNO:-{{ data.id }}</th></tr>
+        <tr><th class="data">NAME:-{{ data.name }}</th></tr>
+        <tr><th class="data">DOB:-{{ data.dob }}</th></tr>
+        <tr><th class="data">GENDER:-{{ data.gender }}</th></tr>
+        <tr><th class="data">PIN:-{{ data.pin }}</th></tr>
+        <tr><th class="data">CITY:-{{ data.city }}</th></tr>
+        <tr><th class="data">STATE:-{{ data.state }}</th></tr>
+        <tr><th class="data">Gmail_Id:-{{ data.gmail }}</th></tr>
+       <tr>
+           <th colspan="2" style="text-align: center;padding-top: 8px">
+               <a href="{% url 'checked_user' %}" class="btn btn-outline-warning">
+                   Log_out
+               </a>
+           </th>
+       </tr>
+    </table>
+
+{% endblock %}

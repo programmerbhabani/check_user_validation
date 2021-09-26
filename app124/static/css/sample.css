@@ -1,0 +1,43 @@
+.body
+{
+    background-color:black ;
+}
+.title
+{
+    background-color: mediumseagreen;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px;
+
+}
+.sub-title
+{
+    background-color:bisque;
+    color: crimson;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Agency FB";
+    font-size: 30px;
+    padding: 8px;
+}
+.forms
+{
+    color: white;
+}
+/*user for gender to replace the bullet*/
+#id_gender{
+    list-style-type:none;
+    display: inline-flex;
+}
+#id_gender >li{
+    padding-left: 10px;
+}
+.messages{
+    background-color: burlywood;
+    color: crimson;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+{% include 'common.html' %}
+{% load static %}
+{% include 'main_menu.html' %}
+{% block content %}
+
+    {% include 'slide.html' %}
+    {% if info %}
+        <table align="center">
+            <tr><th colspan="2" class="sub-title">Search_detail's</th></tr>
+            <tr><th>IDNO:-{{ info.id }}</th></tr>
+            <tr><th>Name:-{{ info.name }}</th></tr>
+
+        </table>
+    {% endif %}
+    {% if error %}
+        <h1 style="text-align: center;color: mediumvioletred;font-size: 40px">{{ error }}</h1>
+    {% endif %}
+{% endblock %}
